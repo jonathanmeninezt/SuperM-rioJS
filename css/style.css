@@ -5,7 +5,7 @@
 }
 .game-board{
   width: 80%;
-  height: 400px;
+  height: 700px;
   border: 1px solid #333;
   margin: 0 auto;
   position: relative;
@@ -15,9 +15,24 @@
 
 .pipe{
   position: absolute;
-  right: 0;
   bottom: 0;
   width: 280px;
   margin-bottom: -15px;
+  animation: pipe-animation 2s infinite linear;
 
+}
+
+.mario{
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -280px;
+  }
+  to {
+    right: 100%;
+  }
 }
