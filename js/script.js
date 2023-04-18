@@ -21,6 +21,8 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
 
   mario.style.animation = 'none';
   mario.style.bottom = `${marioPosition}px`;
+
+  mario.src = './img/gameover.jpg';
 }
 }, 10);
 
