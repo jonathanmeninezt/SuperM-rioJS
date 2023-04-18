@@ -3,7 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+.game-board{
+  width: 80%;
+  height: 400px;
+  border: 1px solid #333;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 
-html, body{
-  height: 100%;
+}
+
+.pipe{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  margin-bottom: -15px;
+
 }
