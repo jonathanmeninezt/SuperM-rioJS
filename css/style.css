@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 .game-board{
-  width: 80%;
-  height: 700px;
-  border: 1px solid #333;
+  width: 100%;
+  height: 750px;
+  border-bottom: 15px solid rgb(35, 160, 35);
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(#87CEEB, #E0F6FF);
 
 }
 
@@ -31,6 +32,12 @@
 
 .jump{
   animation: jump 500ms ease-out;
+}
+
+.clouds{
+  width: 550px;
+  position: absolute;
+  animation: clouds-animation 10s infinite linear;
 }
 
 @keyframes pipe-animation {
@@ -57,5 +64,13 @@
   }
   100%{
     bottom: 0;
+  }
+}
+@keyframes clouds-animation{
+  from{
+    right: -550px;
+  }
+  to{
+    right: 100%;
   }
 }

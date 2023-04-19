@@ -23,6 +23,9 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
   mario.style.bottom = `${marioPosition}px`;
 
   mario.src = './img/gameover.jpg';
+  mario.style.marginLeft = '10px'
+
+  clearInterval(lopp);
 }
 }, 10);
 
