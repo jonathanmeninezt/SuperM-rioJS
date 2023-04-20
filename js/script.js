@@ -5,8 +5,17 @@ const tartu = document.querySelector('.tartu');
 const somHit = new Audio();
 somHit.src = 'audios/player_down.wav'
 
+const jumpHit = new Audio();
+jumpHit.src = 'audios/jumpHit.wav'
+
+const temaMario = new Audio();
+temaMario.src = 'audios/temaMario.wav'
+
+
 const jump = () => {
   mario.classList.add('jump');
+  jumpHit.play();
+
 
   setTimeout(() => {
     mario.classList.remove('jump');
@@ -14,6 +23,7 @@ const jump = () => {
 }
 
 const lopp = setInterval(() => {
+temaMario.play();
 
 const pipePosition = pipe.offsetLeft;
 const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
@@ -30,6 +40,7 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
   mario.src = './img/game-over.png';
   mario.style.marginLeft= '45px';
   mario.style.width = '75px';
+  temaMario.pause();
   somHit.play();
 
 
