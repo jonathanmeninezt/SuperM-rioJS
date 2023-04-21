@@ -1,6 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const tartu = document.querySelector('.tartu');
+const block = document.querySelector('.block');
 
 const somHit = new Audio();
 somHit.src = 'audios/player_down.wav'

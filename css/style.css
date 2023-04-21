@@ -48,6 +48,14 @@
   animation: tartu-animation 10s infinite linear;
 }
 
+.block{
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+  animation: block-animation 3s infinite linear;
+}
+
 @keyframes pipe-animation {
   from {
     right: -280px;
@@ -86,6 +94,15 @@
 @keyframes tartu-animation {
   from {
     right: -280px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes block-animation {
+  from {
+    right: -100px;
   }
   to {
     right: 100%;
