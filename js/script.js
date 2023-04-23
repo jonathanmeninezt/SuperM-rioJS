@@ -13,18 +13,23 @@ const temaMario = new Audio();
 temaMario.src = 'audios/temaMario.wav'
 
 
+
 const jump = () => {
   mario.classList.add('jump');
   jumpHit.play();
 
 
+
   setTimeout(() => {
     mario.classList.remove('jump');
   },500);
+
 }
 
+
+
 const lopp = setInterval(() => {
-temaMario.play();
+  temaMario.play();
 
 const pipePosition = pipe.offsetLeft;
 const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
@@ -39,13 +44,17 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
   mario.style.bottom = `${marioPosition}px`;
 
   mario.src = './img/game-over.png';
-  mario.style.marginLeft= '45px';
+  mario.style.marginLeft= '41px';
   mario.style.width = '75px';
+  mario.style.animation = 'gameover-animation 3s';
   temaMario.pause();
   somHit.play();
 
 
+
+
   clearInterval(lopp);
+
 }
 }, 10);
 
