@@ -53,6 +53,7 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
 
 
 
+
   clearInterval(lopp);
 
 }
