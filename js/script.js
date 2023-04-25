@@ -1,3 +1,5 @@
+const gameInitial = document.querySelector('.game-initial');
+// index.html
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const tartu = document.querySelector('.tartu');
@@ -12,7 +14,9 @@ jumpHit.src = 'audios/jumpHit.wav'
 const temaMario = new Audio();
 temaMario.src = 'audios/temaMario.wav'
 
+const telaInicial = ()=> {
 
+}
 
 const jump = () => {
   mario.classList.add('jump');

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
 }
 .game-board{
   width: 100%;
@@ -52,8 +53,41 @@
   width: 80px;
   position: absolute;
   bottom: 0;
-  right: 200px;
   animation: block-animation 3s infinite linear;
+}
+
+.mato{
+  width: 500px;
+  position: absolute;
+  bottom: -49px;
+  right: 500px;
+  animation: mato-animation 3s infinite linear;
+
+}
+
+/* telainicial.html */
+
+.game-initial{
+  width: 100%;
+  height: 750px;
+  background: url('/img/fundo2.webp');
+  background-size: 100% 100%;
+  text-align: center;
+  animation: clouds-animation 10s infinite linear;
+
+
+}
+
+.game-initial button{
+  margin-top: 350px;
+  padding: 20px 90px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.game-initial button:hover{
+  background: linear-gradient(#aab125, #E0F6FF);
 }
 
 @keyframes pipe-animation {
@@ -120,4 +154,12 @@
     bottom: -150px;
   }
 
+}
+@keyframes mato-animation {
+  from {
+    right: -500px;
+  }
+  to {
+    right: 100%;
+  }
 }
