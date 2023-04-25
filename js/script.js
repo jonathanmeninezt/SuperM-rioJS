@@ -47,6 +47,8 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
   mario.style.marginLeft= '41px';
   mario.style.width = '75px';
   mario.style.animation = 'gameover-animation 3s';
+
+
   temaMario.pause();
   somHit.play();
 
@@ -55,6 +57,39 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
 
 
   clearInterval(lopp);
+
+}
+}, 10);
+
+const loppBlock = setInterval(() => {
+
+
+const blockPosition = block.offsetLeft;
+const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
+
+
+if (blockPosition <= 80 && blockPosition > 0 && marioPosition < 80){
+
+  block.style.animation = 'none';
+  block.style.left = `${blockPosition}px`;
+
+  mario.style.animation = 'none';
+  mario.style.bottom = `${marioPosition}px`;
+
+  mario.src = './img/game-over.png';
+  mario.style.marginLeft= '40px';
+  mario.style.width = '75px';
+  mario.style.animation = 'gameover-animation 3s';
+
+  temaMario.pause();
+  somHit.play();
+
+
+
+
+
+
+  clearInterval(loppBlock);
 
 }
 }, 10);
