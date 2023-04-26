@@ -81,7 +81,7 @@ html, body {
 }
 
 .game-initial button{
-  margin-top: 350px;
+  margin-top: 345px;
   padding: 20px 90px;
   font-size: 20px;
   font-family: 'Press Start 2P', cursive;
@@ -95,15 +95,15 @@ html, body {
 .piso{
   width: 50%;
   position: absolute;
-  bottom: 0px;
+  bottom: -27px;
   left: -60px;
 }
 
 .lava{
   width: 900px;
-  height: 85px;
+  height: 63px;
   position: absolute;
-  bottom: -16px;
+  bottom: -26px;
   right: -13px;
 
 }
@@ -111,8 +111,24 @@ html, body {
 .yoshi{
   width: 200px;
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   left: 300px;
+}
+
+.egg{
+  width: 70px;
+  position: absolute;
+  bottom: 25px;
+  left: 300;
+
+}
+
+.welcome{
+  width: 120px;
+  position: absolute;
+  bottom: 383px;
+  left: 550px;
+  display: none;
 
 
 }
