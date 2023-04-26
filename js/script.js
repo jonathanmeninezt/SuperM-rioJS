@@ -13,7 +13,26 @@ const temaMario = new Audio();
 temaMario.src = 'audios/temaMario.wav'
 
 
+// var pontos = 0;
+// var tempo = 0;
+// var intervalo;
 
+// function iniciarJogo() {
+//   intervalo = setInterval(() => {
+//     tempo++;
+//     document.getElementById("tempo").textContent = `Tempo de jogo: ${tempo} segundos`;
+//   }, 1000);
+// }
+
+// function pararJogo() {
+//   clearInterval(intervalo);
+//   document.getElementById("tempo").textContent = `Tempo de jogo: ${tempo} segundos (final)`;
+// }
+
+// function adicionarPontos() {
+//   pontos++;
+//   document.getElementById("pontos").textContent = `Pontos: ${pontos}`;
+// }
 
 const jump = () => {
   mario.classList.add('jump');

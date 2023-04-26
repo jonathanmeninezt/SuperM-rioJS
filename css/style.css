@@ -76,6 +76,7 @@ html, body {
   background: url('/img/fundo2.webp');
   text-align: center;
   animation: clouds-animation 10s infinite linear;
+  overflow: hidden;
 
 
 }
