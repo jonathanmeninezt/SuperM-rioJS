@@ -14,9 +14,9 @@ jumpHit.src = 'audios/jumpHit.wav'
 const temaMario = new Audio();
 temaMario.src = 'audios/temaMario.wav'
 
-const telaInicial = ()=> {
+const HitAbertura = new Audio();
+HitAbertura.src = 'audios/abertura.wav'
 
-}
 
 const jump = () => {
   mario.classList.add('jump');
