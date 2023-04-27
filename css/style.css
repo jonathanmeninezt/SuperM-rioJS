@@ -20,7 +20,7 @@
   bottom: 0;
   width: 280px;
   margin-bottom: -15px;
-  animation: pipe-animation 2s infinite linear;
+  animation: pipe-animation 4s infinite linear;
 
 }
 
@@ -61,7 +61,7 @@
   position: absolute;
   bottom: -49px;
   right: 500px;
-  animation: mato-animation 3s infinite linear;
+  animation: mato-animation 4s infinite linear;
 
 }
 
