@@ -20,7 +20,7 @@
   bottom: 0;
   width: 280px;
   margin-bottom: -15px;
-  animation: pipe-animation 4s infinite linear;
+  animation: pipe-animation 3s infinite linear;
 
 }
 
@@ -53,7 +53,7 @@
   width: 80px;
   position: absolute;
   bottom: 0;
-  animation: block-animation 3s infinite linear;
+  animation: block-animation 4s infinite linear;
 }
 
 .mato{
@@ -71,6 +71,10 @@
   flex-direction: column;
 }
 
+.score_cont > p{
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+}
 .score_cont button{
   width: 100px;
   background: linear-gradient(#811919, #E0F6FF);
