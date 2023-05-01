@@ -69,15 +69,23 @@
   width: 20%;
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  margin-left: 50px;
+
+
 }
 
 .score_cont > p{
   font-size: 20px;
+  font-weight: 600;
   font-family: 'Press Start 2P', cursive;
+  z-index: 0;
 }
 .score_cont button{
   width: 100px;
   background: linear-gradient(#811919, #E0F6FF);
+  z-index: 0;
+
 }
 /* telainicial.html */
 
