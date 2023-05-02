@@ -75,18 +75,14 @@
 
 }
 
-.score_cont > p{
-  font-size: 20px;
-  font-weight: 600;
+.score_cont > span{
+  font-size: 15px;
+  font-weight: 400;
   font-family: 'Press Start 2P', cursive;
-  z-index: 0;
-}
-.score_cont button{
-  width: 100px;
-  background: linear-gradient(#811919, #E0F6FF);
-  z-index: 0;
+
 
 }
+
 /* telainicial.html */
 
 html, body {
