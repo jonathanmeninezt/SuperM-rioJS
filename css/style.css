@@ -32,7 +32,7 @@
 }
 
 .jump{
-  animation: jump 500ms ease-out;
+  animation: jump 600ms ease-out;
 }
 
 .clouds{
@@ -97,6 +97,11 @@ html, body {
   overflow: hidden;
 
 
+
+
+
+
+
 }
 
 .game-initial button{
@@ -105,6 +110,8 @@ html, body {
   font-size: 20px;
   font-family: 'Press Start 2P', cursive;
   background: linear-gradient(#87CEEB, #E0F6FF);
+
+
 }
 
 .game-initial button:hover{
@@ -116,6 +123,8 @@ html, body {
   position: absolute;
   bottom: -27px;
   left: -60px;
+
+
 }
 
 .lava{
@@ -223,5 +232,223 @@ html, body {
   }
   to {
     right: 100%;
+  }
+}
+
+
+/* ***********MODO RESPONSIVO************** */
+
+@media screen and (max-width:1500px){
+
+.piso{
+  width: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: -60px;
+
+
+}
+
+.lava{
+  width: 867px;
+  height: 63px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+}
+
+.yoshi{
+  width: 200px;
+  position: absolute;
+  bottom: 10px;
+  left: 300px;
+}
+
+.egg{
+  width: 70px;
+  position: absolute;
+  bottom: 50px;
+  right: 850px;
+
+}
+
+.welcome{
+  width: 120px;
+  position: absolute;
+  bottom: 388px;
+  left: 550px;
+  display: none;
+
+
+}
+}
+
+@media screen and (max-width:1360px){
+
+  .piso{
+    width: 50%;
+    position: absolute;
+    bottom: 34px;
+    left: -60px;
+
+
+  }
+
+  .lava{
+    width: 100%;
+    height: 53px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+  }
+
+  .yoshi{
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+  }
+
+  .egg{
+    width: 70px;
+    position: absolute;
+    bottom: 55px;
+    right: 780px;
+
+  }
+
+  .welcome{
+    width: 120px;
+    position: absolute;
+    bottom: 388px;
+    left: 550px;
+    display: none;
+
+
+  }
+  }
+
+
+@media screen and (max-width:1280px){
+
+  .yoshi{
+    width: 170px;
+    position: absolute;
+    bottom: 40px;
+    left: 320px;
+  }
+
+  .egg{
+    width: 55px;
+    position: absolute;
+    bottom: 76px;
+    right: 780px;
+
+  }
+
+  }
+
+  @media screen and (max-width:1050px){
+
+    .yoshi{
+      width: 170px;
+      position: absolute;
+      bottom: 30px;
+      left: 200px;
+    }
+
+    .egg{
+      width: 55px;
+      position: absolute;
+      bottom: 66px;
+      right: 620px;
+
+    }
+
+    }
+
+
+    @media screen and (max-width:970px){
+
+      .yoshi{
+        width: 170px;
+        position: absolute;
+        bottom: 30px;
+        left: 180px;
+      }
+
+      .egg{
+        width: 55px;
+        position: absolute;
+        bottom: 60px;
+        right: 560px;
+
+      }
+
+      }
+
+      @media screen and (max-width:870px){
+
+        .yoshi{
+          width: 170px;
+          position: absolute;
+          bottom: 30px;
+          left: 160px;
+        }
+
+        .egg{
+          width: 55px;
+          position: absolute;
+          bottom: 60px;
+          right: 500px;
+
+        }
+
+        }
+
+@media screen and (max-width:539px){
+  .piso{
+    width: 87%;
+    position: absolute;
+    bottom: 14px;
+    left: -60px;
+
+
+  }
+
+  .lava{
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    bottom: -27px;
+    right: -42px;
+
+  }
+
+  .yoshi{
+    width: 170px;
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+  }
+
+  .egg{
+    width: 60px;
+    position: absolute;
+    bottom: 40px;
+    right: 140px;
+
+  }
+
+  .welcome{
+    width: 100px;
+    position: absolute;
+    bottom: 387px;
+    left: 270px;
+    display: none;
+
+
   }
 }
