@@ -1,4 +1,5 @@
 const gameBoard = document.querySelector('.game-board');
+const container_return = document.querySelector('.container_return');
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const tartu = document.querySelector('.tartu');
@@ -139,11 +140,11 @@ function fimJogo() {
 
   textGameOver.style.fontSize = "28px";
   textGameOver.style.textAlign = "center";
-  textGameOver.style.marginTop = "300px";
+  textGameOver.style.marginTop = "100px";
   textGameOver.style.backgroundColor = "black";
   textGameOver.style.color = "#f3ff12";
 
 
-  gameBoard.appendChild(textGameOver);
+  container_return.appendChild(textGameOver);
 
 };
