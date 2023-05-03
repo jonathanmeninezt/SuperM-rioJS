@@ -4,6 +4,7 @@ const pipe = document.querySelector('.pipe');
 const tartu = document.querySelector('.tartu');
 const block = document.querySelector('.block');
 const score = document.querySelector('#score');
+const mato = document.querySelector('.mato');
 
 let count = 0;
 
@@ -32,6 +33,26 @@ const jump = () => {
 
 }
 
+const animationSpeed = setInterval(() => {
+
+  if(count === 2000) {
+
+    pipe.style.animationDuration = '2s';
+    block.style.animationDuration = '2.2s';
+    mato.style.animationDuration = '2.8s';
+
+
+  }else if(count === 4000){
+    pipe.style.animationDuration = '1s';
+    block.style.animationDuration = '1.1s';
+    mato.style.animationDuration = '1.8s';
+
+
+    clearInterval(animationSpeed);
+  }
+}, 10);
+
+
 
 
 const lopp = setInterval(() => {
@@ -57,11 +78,6 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
 
 
   fimJogo();
-
-
-
-
-
 
 
   clearInterval(lopp);

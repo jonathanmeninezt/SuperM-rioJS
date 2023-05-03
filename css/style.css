@@ -20,7 +20,8 @@
   bottom: 0;
   width: 280px;
   margin-bottom: -15px;
-  animation: pipe-animation 3s infinite linear;
+  animation: pipe-animation infinite linear;
+  animation-duration: 3s;
 
 }
 
