@@ -7,6 +7,7 @@ const tartu = document.querySelector('.tartu');
 const block = document.querySelector('.block');
 const score = document.querySelector('#score');
 const mato = document.querySelector('.mato');
+const moon = document.querySelector('.moon');
 
 let count = 0;
 
@@ -44,7 +45,7 @@ const animationSpeed = setInterval(() => {
     mato.style.animationDuration = '2.8s';
 
 
-  }else if(count === 4000){
+  }else if(count === 3000){
     pipe.style.animationDuration = '1s';
     block.style.animationDuration = '1s';
     mato.style.animationDuration = '1.8s';
@@ -55,12 +56,13 @@ const animationSpeed = setInterval(() => {
 }, 10);
 
 const trocaCenario = setInterval(() => {
-  if(count === 2500){
+  if(count === 1500){
     gameBoard.style.background = 'linear-gradient( #ff8c00, #E0F6FF)';
 
-  }else if(count === 4500) {
+  }else if(count === 800) {
      gameBoard.style.background = 'linear-gradient( #170333, #111111)';
      gameBoard.style.borderBottom = '15px solid rgb(96, 118, 96)';
+     moon.style.display = 'block';
 
     clearInterval(trocaCenario);
   }

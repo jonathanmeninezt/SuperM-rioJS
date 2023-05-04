@@ -66,6 +66,15 @@
 
 }
 
+.moon{
+  width: 100px;
+  position: absolute;
+  right: 200px;
+  bottom: 500px;
+  display: none;
+
+}
+
 
 .score_cont{
   width: 20%;
