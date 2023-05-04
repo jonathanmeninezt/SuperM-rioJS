@@ -1,5 +1,6 @@
 const gameBoard = document.querySelector('.game-board');
 const container_return = document.querySelector('.container_return');
+const jogar_novamente = document.querySelector('.jogar_novamente');
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const tartu = document.querySelector('.tartu');
@@ -36,20 +37,32 @@ const jump = () => {
 
 const animationSpeed = setInterval(() => {
 
-  if(count === 2000) {
+  if(count === 1900) {
 
     pipe.style.animationDuration = '2s';
-    block.style.animationDuration = '2.2s';
+    block.style.animationDuration = '2s';
     mato.style.animationDuration = '2.8s';
 
 
   }else if(count === 4000){
     pipe.style.animationDuration = '1s';
-    block.style.animationDuration = '1.1s';
+    block.style.animationDuration = '1s';
     mato.style.animationDuration = '1.8s';
 
 
     clearInterval(animationSpeed);
+  }
+}, 10);
+
+const trocaCenario = setInterval(() => {
+  if(count === 2500){
+    gameBoard.style.background = 'linear-gradient( #ff8c00, #E0F6FF)';
+
+  }else if(count === 4500) {
+     gameBoard.style.background = 'linear-gradient( #170333, #111111)';
+     gameBoard.style.borderBottom = '15px solid rgb(96, 118, 96)';
+
+    clearInterval(trocaCenario);
   }
 }, 10);
 
@@ -80,6 +93,8 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
 
   fimJogo();
 
+  jogar_novamente.style.display = 'block';
+
 
   clearInterval(lopp);
 
@@ -88,6 +103,9 @@ if (pipePosition <= 37 && pipePosition > 0 && marioPosition < 80){
   score.innerHTML = `SCORE: ${count}`;
 
 }, 10);
+
+
+
 
 const loppBlock = setInterval(() => {
 
@@ -133,7 +151,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 function fimJogo() {
-  const container = document.querySelector('.container');
+
   const textGameOver = document.createElement("h1");
   textGameOver.innerText = `GAME OVER!
   A sua pontuação é ${count}`;
@@ -148,3 +166,8 @@ function fimJogo() {
   container_return.appendChild(textGameOver);
 
 };
+
+
+jogar_novamente.addEventListener('click', () => {
+  location.reload();
+});
