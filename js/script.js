@@ -43,32 +43,22 @@ const animationSpeed = setInterval(() => {
     pipe.style.animationDuration = '2s';
     block.style.animationDuration = '2s';
     mato.style.animationDuration = '2.8s';
+    gameBoard.style.background = 'linear-gradient( #ff8c00, #E0F6FF)';
 
 
-  }else if(count === 3000){
+  }else if(count === 2800){
+
     pipe.style.animationDuration = '1s';
     block.style.animationDuration = '1s';
     mato.style.animationDuration = '1.8s';
+    gameBoard.style.background = 'linear-gradient( #170333, #111111)';
+    gameBoard.style.borderBottom = '15px solid rgb(96, 118, 96)';
+    moon.style.display = 'block';
 
 
     clearInterval(animationSpeed);
   }
 }, 10);
-
-const trocaCenario = setInterval(() => {
-  if(count === 1500){
-    gameBoard.style.background = 'linear-gradient( #ff8c00, #E0F6FF)';
-
-  }else if(count === 800) {
-     gameBoard.style.background = 'linear-gradient( #170333, #111111)';
-     gameBoard.style.borderBottom = '15px solid rgb(96, 118, 96)';
-     moon.style.display = 'block';
-
-    clearInterval(trocaCenario);
-  }
-}, 10);
-
-
 
 
 const lopp = setInterval(() => {
