@@ -46,7 +46,7 @@ const animationSpeed = setInterval(() => {
     gameBoard.style.background = 'linear-gradient( #ff8c00, #E0F6FF)';
 
 
-  }else if(count === 2800){
+  }else if(count === 100){
 
     pipe.style.animationDuration = '1s';
     block.style.animationDuration = '1s';
@@ -54,6 +54,7 @@ const animationSpeed = setInterval(() => {
     gameBoard.style.background = 'linear-gradient( #170333, #111111)';
     gameBoard.style.borderBottom = '15px solid rgb(96, 118, 96)';
     moon.style.display = 'block';
+    score.style.color = 'white';
 
 
     clearInterval(animationSpeed);
