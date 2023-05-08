@@ -143,7 +143,7 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-function fimJogo() {
+const fimJogo = () => {
 
   const textGameOver = document.createElement("h1");
   textGameOver.innerText = `GAME OVER!
